@@ -14,6 +14,20 @@ if __name__ == '__main__':
     # 打印
     print('Hello World!')
 
+    #获取双色球篮球和红球
+    j=0
+    red_list=[]
+    blue_list = []
+    while j<6:
+        red_bool = random.randint(1,33)
+        if red_bool not in red_list:
+            red_list.append(red_bool)
+            j+=1
+    blue_list.append(random.randint(1,16))
+    print('红球为:\n%s'%red_list)
+    print('篮球为:\n%s'%blue_list)
+
+
     # 取4个随机数
     i = 0
     rand_list = []
